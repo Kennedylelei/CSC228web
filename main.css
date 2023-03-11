@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 0.9rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.99rem;
+    background: linear-gradient(to right top, #78d1c1, #05946e);
+    user-select: none;
+    overflow-x: hidden;
+}
+h1{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 1.1rem;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 1.25rem;
+    margin: 0 auto;
+    gap: 2.2rem;
+    grid-template-columns: 15rem auto;
+}
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    margin-top: 5px;
+}
+.hero-image img{
+    margin: auto;
+    padding: 5px;
+    background-color: #cb5656;
+    border-radius: 50%;
+    height: 100px;
+    display: flex;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.hero-image img:hover{
+    box-shadow: none;
+}
+.hero-header{
+    margin: auto;
+}
+.hero-header h1{
+    font-weight: 800;
+    font-size: 2rem;
+}
+header{
+    display: grid;
+    text-align: center;
+}
+.hero nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 300px;
+}
+.hero-header{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+}
+nav ul li a{
+    position: relative;
+    letter-spacing: 0.4px;
+    color: #000;
+    transition: all 400ms ease;
+}
+nav ul li a:hover{
+    color: #000;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transform: scaleX(1);
+}
+aside{
+    height: 450px;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: .5rem;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+aside h3{
+    font-weight: 400;
+    font-size: 1.02rem;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: #000;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    margin-left: 1.5rem;
+}
+
+aside .sidebar a:hover{
+    transform: translateX(5px);
+    transition: all 300ms ease;
+    color: #bd79a3;
+}
+
+aside .sidebar a.active{
+    background: linear-gradient(to right top, #b7a28b, #b1e5e3);
+    border-radius: 5px;
+}
+
+main{
+    padding: 30px 30px;
+    background-image: url(med-hero3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+footer .footer-links p{
+    display: grid;
+    text-align: center;
+}
+
+/* -- REGISTRATION -- */
+.form-container{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    width: 70%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+}
