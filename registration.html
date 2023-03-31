@@ -37,31 +37,31 @@
             <h3>Registration Form</h3>
         </div>
         <div class="reg-form">
-            <form action="#" class="form">
+            <form action="connect.php" method="POST" class="form">
               <div class="input-box">
-                <label>Patient ID</label>
-                <input type="text" placeholder="Enter Patient ID" required />
+                <label for="patient_id">Patient ID</label>
+                <input type="text" name="patient_id" placeholder="Enter Patient ID" required />
               </div>
       
               <div class="input-box">
-                <label>First Name</label>
-                <input type="text" placeholder="Enter first name" required />
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" placeholder="Enter first name" required />
               </div>
               <div class="input-box">
-                <label>Middle Name</label>
-                <input type="text" placeholder="Enter middle name" required />
+                <label for="middle_name">Middle Name</label>
+                <input type="text" name="middle_name" placeholder="Enter middle name" required />
               </div>
               <div class="input-box">
-                <label>Surname</label>
-                <input type="text" placeholder="Enter surname" required />
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" placeholder="Enter surname" required />
               </div>
               <div class="input-box">
-                <label>Date of Birth</label>
-                <input type="date" placeholder="Enter birth date" required />
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" placeholder="Enter birth date" required />
               </div>
               <div class="input-box">
-                <label>Gender</label>
-                <select>
+                <label for="gender">Gender</label>
+                <select name="gender">
                   <option hidden>Gender</option>
                   <option>Male</option>
                   <option>Female</option>
@@ -69,8 +69,8 @@
                 </select>
               </div>
               <div class="input-box">
-                <label>County</label>
-                <select>
+                <label for="county">County</label>
+                <select name="county">
                   <option hidden>County</option>
                   <option value="Mombasa">Mombasa</option>
                   <option value="Kwale">Kwale</option>
